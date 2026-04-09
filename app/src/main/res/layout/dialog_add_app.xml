@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_package_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="包名 (例如: com.tencent.qqmusic)"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="应用名称"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="版本号"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="功能说明 (例如: 解锁会员)"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_compatible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="兼容说明 (例如: 全版本通杀)" />
+
+</LinearLayout>
