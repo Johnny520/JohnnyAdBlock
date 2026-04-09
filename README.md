@@ -1,4 +1,4 @@
-  # JohnnyAdBlock 🚫
+# JohnnyAdBlock 🚫
 一款轻量、纯净的Android广告拦截工具，纯Java开发，无Kotlin依赖，开箱即用。
 
 ---
@@ -8,6 +8,12 @@
 - **轻量无冗余**：核心功能简洁高效，安装包体积小，运行流畅
 - **自动打包构建**：集成GitHub Actions，提交代码自动编译APK，打包完成直接下载
 - **标准Android项目结构**：遵循Android开发规范，易于二次开发和维护
+
+---
+
+## 📢 重要声明
+本项目仅用于**学习交流与技术研究**，严禁用于商业用途、非法用途及损害他人权益的行为。
+使用本工具所产生的一切后果，由使用者自行承担，与项目作者无关。
 
 ---
 
@@ -47,12 +53,12 @@ plaintext
 - Gradle 8.2 及以上
 
 ### 2. 本地编译
-1.  克隆项目到本地
+1. 克隆项目到本地
     ```bash
     git clone https://github.com/Johnny520/JohnnyAdBlock.git
     ```
-2.  用Android Studio打开项目，等待Gradle同步完成
-3.  点击「Run」按钮，直接编译运行APK
+2. 用Android Studio打开项目，等待Gradle同步完成
+3. 点击「Run」按钮，直接编译运行APK
 
 ### 3. 在线自动打包（推荐）
 - 提交代码到`main`分支，GitHub Actions自动触发打包
@@ -84,7 +90,5 @@ plaintext
 ## 🙋‍♂️ 作者
 Johnny520
 - GitHub：[https://github.com/Johnny520](sslocal://flow/file_open?url=https%3A%2F%2Fgithub.com%2FJohnny520&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)
- 
- 
  
  
