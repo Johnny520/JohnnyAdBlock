@@ -3,15 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.9.24" apply false
 }
 
-// 全局禁用 Kotlin 构建统计服务，根治 buildFlowServiceProperty 报错
+// 全局禁用 Kotlin 构建统计服务（兼容所有 Kotlin 版本的正确写法）
 allprojects {
-    plugins.withId("org.jetbrains.kotlin.android") {
-        val kotlinExtension = extensions.getByType(org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension::class.java)
-        // 核心：彻底关闭构建统计服务
-        kotlinExtension.buildFlowServiceEnabled.set(false)
-        kotlinExtension.explicitApiMode.set(org.jetbrains.kotlin.gradle.dsl.ExplicitApiMode.Disabled)
-    }
-
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
         kotlinOptions {
             jvmTarget = "17"
@@ -20,6 +13,7 @@ allprojects {
     }
 }
 
-tasks.register("clean", Delete::class) {
-    delete(rootProject.buildDir)
+// 修复弃用问题：用 layout.buildDirectory 替代 rootProject.buildDir
+tasks.register<Delete>("clean") {
+    delete(layout.buildDirectory)
 }
