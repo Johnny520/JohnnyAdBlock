@@ -88,21 +88,22 @@ JohnnyAdBlock 依托 Android 系统开发，尊重并支持各应用厂商的各
 ## 📁 项目结构
 
 JohnnyAdBlock/
-├── app/                      # 应用主模块
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/         # 核心业务代码
-│   │   │   ├── res/          # 资源文件
-│   │   │   └── AndroidManifest.xml
-│   └── build.gradle.kts
-├── gradle/
-├── build.gradle.kts
-├── gradle.properties
-├── settings.gradle.kts
-├── gradlew / gradlew.bat
-├── README.md
-├── LICENSE
-└── .gitignore
+├─ app/                # 应用主模块
+│  ├─ src/
+│  │  ├─ main/
+│  │  │  ├─ java/      # 核心业务代码
+│  │  │  ├─ res/       # 资源文件
+│  │  │  └─ AndroidManifest.xml
+│  └─ build.gradle.kts
+├─ gradle/
+├─ build.gradle.kts
+├─ gradle.properties
+├─ settings.gradle.kts
+├─ gradlew / gradlew.bat
+├─ README.md
+├─ LICENSE
+└─ .gitignore
+
 ---
 
 ## 🛠️ 环境要求
