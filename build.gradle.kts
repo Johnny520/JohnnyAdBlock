@@ -7,7 +7,7 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.9.22" apply false
 }
 
-// 这是一个标准的 clean 任务，用来替代你原来报错的 delete(rootProject.buildDir)
+// 修复报错：Unresolved reference 和 Deprecated buildDir
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
