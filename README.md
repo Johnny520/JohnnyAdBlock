@@ -1,190 +1,95 @@
+📦 JohnnyAdBlock 全Java项目 README.md（一键复制版）
+ 
+直接全选复制，粘贴到仓库根目录的  README.md  里，覆盖旧内容即可。
+ 
+markdown  
 # JohnnyAdBlock 🚫
-一款专为 Android 平台打造的轻量去广告模块，一键屏蔽各类应用广告，还你纯净无干扰的使用体验。
+一款轻量、纯净的Android广告拦截工具，纯Java开发，无Kotlin依赖，开箱即用。
 
 ---
 
-## 📢 重要声明
-本项目**仅用于学习交流与合法合规的个人使用**，严禁用于商业用途、非法用途或侵犯他人权益的场景。
-使用本项目所产生的一切后果由使用者自行承担，项目开发者不承担任何责任。
-
-本项目为开源学习项目，不针对任何应用进行恶意攻击，仅用于广告拦截技术学习与交流；所有拦截规则均由用户自主添加，开发者不提供任何针对特定应用的破解、去广告服务。
-
----
-
-## 📖 简介
-JohnnyAdBlock 是一款轻量无侵入的 Android 去广告模块，旨在帮助用户屏蔽各类应用广告，摆脱开屏、弹窗、信息流等广告的干扰，享受纯净的使用体验。
-适用于需要纯净使用环境的普通用户、需要自定义拦截规则的进阶用户；不修改应用源码，不影响应用正常功能。
-
----
-
-## ⚠️ 特别提醒
-- 本项目仅可用于**个人合法合规的广告拦截**，不得用于任何侵犯他人权益、违反法律法规的行为。
-- 您必须合理使用本项目，请勿用于任何商业/非法用途，否则一切后果由您自行承担，JohnnyAdBlock 项目开发者不承担任何责任。
-- JohnnyAdBlock 是由开源社区开发的 Android 去广告工具，未得到任何应用厂商许可，应用厂商对用户使用此软件产生的一切后果概不负责。
-- JohnnyAdBlock 是一款技术学习驱动的开源项目，项目随时可能停止维护。
-
----
-
-## 🧭 立场
-分享热爱，传递价值！
-
-本项目自 2026 年发布，创建初期便不单单视作去广告工具，更承载着分享技术和传递价值观的使命，正因如此才与众不同。
-其他 Fork、同名仓库、同名 APP 项目均与本项目无关，因立场不同、目标不同，不可简单等同。
-
-JohnnyAdBlock 依托 Android 系统开发，尊重并支持各应用厂商的各项规则和政策，任何使用本项目的用户都必须遵守相关法律法规与应用规则。
-我们希望为用户提供便利的同时，尊重并保护应用开发者的合法权益，积极探索广告拦截与合理使用的平衡点，不侵犯任何应用的正常权益。
-
----
-
-## ✨ 功能特性
-
-### 🛡️ 全场景广告拦截
-- ☑️ 开屏广告
-- ☑️ 弹窗广告
-- ☑️ 信息流广告
-- ☑️ 插屏广告
-- ☑️ 横幅广告
-
-### 🎨 自定义规则体系
-- ☑️ 手动添加/修改拦截规则
-- ☑️ 规则批量导入/导出
-- ☑️ 云端规则库自动更新
-
-### ⚡ 极致性能体验
-- ☑️ 轻量无侵入，不修改应用源码
-- ☑️ 后台低占用，运行流畅不卡顿
-- ☑️ 规则生效无需重启应用
-
-### 🔧 实用辅助功能
-- ☑️ 规则备份与恢复
-- ☑️ 拦截日志查看
-- ☑️ 应用白名单管理
-
-### 📱 全平台适配
-- ☑️ 支持 Android 10+ 全版本
-- ☑️ 兼容市面主流机型
-
----
-
-## 🌐 项目生态
-项目引入多款开源库，为适配 Android 平台完成重构优化：
-- 核心拦截引擎依托开源规则库
-- 项目构建基于 Gradle 开源生态
-- 详细依赖说明详见项目 `gradle` 目录
-
----
-
-## 🎨 项目设计
-本项目由 **Johnny520** 独立完成整体设计、UI 开发与功能实现。
-
----
-
-## 🙏 致谢
-感谢所有为开源社区做出贡献的开发者！
-如果这个项目对你有帮助，欢迎 Star ⭐ 支持一下！
+## ✨ 项目特性
+- **纯Java实现**：彻底移除Kotlin相关依赖，编译更稳定，适配所有Android开发环境
+- **轻量无冗余**：核心功能简洁高效，安装包体积小，运行流畅
+- **自动打包构建**：集成GitHub Actions，提交代码自动编译APK，打包完成直接下载
+- **标准Android项目结构**：遵循Android开发规范，易于二次开发和维护
 
 ---
 
 ## 📁 项目结构
-```text
+ 
+ 
 JohnnyAdBlock/
-├─ app/                # 应用主模块
+├─ .github/
+│  └─ workflows/
+│     └─ android.yml          # GitHub Actions 自动打包配置
+├─ app/
 │  ├─ src/
-│  │  ├─ main/
-│  │  │  ├─ java/      # 核心业务代码
-│  │  │  ├─ res/       # 资源文件
-│  │  │  └─ AndroidManifest.xml
-│  └─ build.gradle.kts
-├─ gradle/
-├─ build.gradle.kts
-├─ gradle.properties
-├─ settings.gradle.kts
-├─ gradlew / gradlew.bat
-├─ README.md
-├─ LICENSE
-└─ .gitignore
-
----
-
-## 🛠️ 环境要求
-- **开发环境**：Android Studio Hedgehog | 2023.1.1 及以上
-- **JDK 版本**：JDK 17 及以上
-- **Gradle 版本**：Gradle 8.0 及以上
-- **编译 SDK**：Android 14 (API 34) 及以上
-- **最低兼容**：Android 10 (API 29)
-
+│  │  └─ main/
+│  │     ├─ java/
+│  │     │  └─ com/qgg/Johnny/
+│  │     │     └─ MainActivity.java  # 主Activity（纯Java）
+│  │     ├─ res/
+│  │     │  ├─ layout/
+│  │     │  │  └─ activity_main.xml   # 主界面布局
+│  │     │  ├─ values/
+│  │     │  │  ├─ strings.xml         # 字符串资源
+│  │     │  │  └─ themes.xml          # 主题配置
+│  │     └─ AndroidManifest.xml      # 应用清单文件
+│  └─ build.gradle.kts                # App模块Gradle配置（纯Java）
+├─ build.gradle.kts                   # 根项目Gradle配置
+├─ gradle.properties                  # 全局Gradle配置
+└─ settings.gradle.kts                # 项目仓库配置
+ 
+plaintext  
 
 ---
 
 ## 🚀 快速开始
+### 1. 环境要求
+- Android Studio Hedgehog | 2023.1.1 及以上
+- JDK 17
+- Gradle 8.2 及以上
 
-### 1. 克隆项目
-```bash
-git clone https://github.com/Johnny520/JohnnyAdBlock.git
-cd JohnnyAdBlock
+### 2. 本地编译
+1.  克隆项目到本地
+    ```bash
+    git clone https://github.com/Johnny520/JohnnyAdBlock.git
+    ```
+2.  用Android Studio打开项目，等待Gradle同步完成
+3.  点击「Run」按钮，直接编译运行APK
 
-2. 编译运行
- 
-1. 用 Android Studio 打开项目，等待依赖同步完成
-​
-2. 连接 Android 设备（开启 USB 调试）
-​
-3. 点击「Run」按钮，自动编译并安装到设备
-​
-4. 打开应用，开启去广告服务，即可生效
- 
-3. 自定义规则
- 
-1. 进入应用「规则管理」页面
-​
-2. 点击「添加规则」，输入广告域名/特征
-​
-3. 保存后立即生效，无需重启应用
- 
- ---
+### 3. 在线自动打包（推荐）
+- 提交代码到`main`分支，GitHub Actions自动触发打包
+- 进入仓库「Actions」标签，查看打包进度
+- 打包完成后，在「Artifacts」中直接下载APK安装包
 
-## 📝 更新日志
- 
-### v1.0.0 (2026-04-09)
- 
-- 首次提交项目基础框架
-​
-- 完成核心去广告拦截模块开发
-​
-- 适配 Android 10+ 全版本
-​
-- 支持自定义广告规则
-​
-- 完成项目基础文档与开源配置
- 
-## 🤝 贡献指南
- 
-### 欢迎提交 Issue 反馈问题、提交 PR 优化功能！
- 
-1. Fork 本仓库
-​
-2. 创建特性分支 ( git checkout -b feature/AmazingFeature )
-​
-3. 提交修改 ( git commit -m 'Add some AmazingFeature' )
-​
-4. 推送到分支 ( git push origin feature/AmazingFeature )
-​
-5. 打开 Pull Request
- 
- ---
+---
+
+## 📦 下载安装
+- 最新Release版本：[点击下载](sslocal://flow/file_open?url=https%3A%2F%2Fgithub.com%2FJohnny520%2FJohnnyAdBlock%2Freleases&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)
+- 每次提交自动生成最新APK，永久保存，随时下载
+
+---
+
+## 🛠️ 技术栈
+- **开发语言**：Java 17
+- **构建工具**：Gradle 8.2
+- **Android版本**：compileSdk 34，minSdk 29，targetSdk 34
+- **依赖库**：AndroidX、Material Design、ConstraintLayout
+- **CI/CD**：GitHub Actions
+
+---
 
 ## 📄 开源协议
- 
-###本项目基于 MIT License 开源，详细协议见  LICENSE  文件。
- 
- --- 
+本项目基于 [MIT License](sslocal://flow/file_open?url=LICENSE&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=) 开源，可自由使用、修改和分发。
 
-## 👨‍💻 作者
- 
+---
+
+## 🙋‍♂️ 作者
 Johnny520
+- GitHub：[https://github.com/Johnny520](sslocal://flow/file_open?url=https%3A%2F%2Fgithub.com%2FJohnny520&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)
+ 
  
-- GitHub：https://github.com/Johnny520
-​
-- 项目地址：https://github.com/Johnny520/JohnnyAdBlock
-
- ---
+ 
+ 
