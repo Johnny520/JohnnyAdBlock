@@ -86,7 +86,8 @@ JohnnyAdBlock 依托 Android 系统开发，尊重并支持各应用厂商的各
 ---
 
 ## 📁 项目结构
-
+```text
+（你复制的目录放这里）
 JohnnyAdBlock/
 ├─ app/                # 应用主模块
 │  ├─ src/
