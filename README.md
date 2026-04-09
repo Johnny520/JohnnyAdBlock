@@ -92,19 +92,17 @@ JohnnyAdBlock/
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/         # 核心业务代码
-│   │   │   ├── res/          # 资源文件（图标、布局、样式等）
-│   │   │   └── AndroidManifest.xml # 应用清单文件
-│   └── build.gradle.kts     # 模块构建配置
-├── gradle/                   # Gradle 构建工具
-├── build.gradle.kts         # 项目根构建配置
-├── gradle.properties         # Gradle 全局配置
-├── settings.gradle.kts      # 项目依赖配置
-├── gradlew / gradlew.bat     # Gradle 脚本（Linux/Windows）
-├── README.md                 # 项目说明文档
-├── LICENSE                   # 开源协议
-└── .gitignore                # Git 忽略文件配置
-
-
+│   │   │   ├── res/          # 资源文件
+│   │   │   └── AndroidManifest.xml
+│   └── build.gradle.kts
+├── gradle/
+├── build.gradle.kts
+├── gradle.properties
+├── settings.gradle.kts
+├── gradlew / gradlew.bat
+├── README.md
+├── LICENSE
+└── .gitignore
 ---
 
 ## 🛠️ 环境要求
