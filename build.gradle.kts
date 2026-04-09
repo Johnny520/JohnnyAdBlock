@@ -1,11 +1,6 @@
-import org.gradle.api.tasks.Delete
-
 plugins {
     id("com.android.application") version "8.2.0" apply false
-    id("com.android.library") version "8.2.0" apply false
     id("org.jetbrains.kotlin.android") version "1.9.22" apply false
 }
 
-tasks.register<Delete>("clean") {
-    delete(rootProject.layout.buildDirectory)
-}
+// 这个文件只负责管理插件版本，不需要其他内容
