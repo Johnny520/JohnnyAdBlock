@@ -35,7 +35,5 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.google.code.gson:gson:2.10.1")
-    compileOnly("de.robv.android.xposed:api:82") {
-        isTransitive = false
-    }
+    compileOnly("de.robv.android.xposed:api:82")
 }
