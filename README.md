@@ -106,6 +106,7 @@ JohnnyAdBlock/
 
 ---
 
+```text
 ## 🛠️ 环境要求
 - **开发环境**：Android Studio Hedgehog | 2023.1.1 及以上
 - **JDK 版本**：JDK 17 及以上
@@ -114,7 +115,7 @@ JohnnyAdBlock/
 - **最低兼容**：Android 10 (API 29)
 
 ---
-
+```text
 ## 🚀 快速开始
 
 ### 1. 克隆项目
@@ -142,7 +143,9 @@ cd JohnnyAdBlock
 3. 保存后立即生效，无需重启应用
  
  
- 
+
+ ```text
+
 📝 更新日志
  
 v1.0.0 (2026-04-09)
@@ -174,12 +177,14 @@ v1.0.0 (2026-04-09)
 5. 打开 Pull Request
  
  
- 
+
+```text 
 📄 开源协议
  
 本项目基于 MIT License 开源，详细协议见  LICENSE  文件。
  
  
+```text
  
 👨‍💻 作者
  
