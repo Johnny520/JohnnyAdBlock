@@ -2,6 +2,7 @@ name: Build Android APK
 on:
   push:
     branches: [ main ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,7 +16,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Build Release APK
-        run: ./gradlew assembleRelease --no-daemon --no-build-cache --no-configuration-cache
+        run: ./gradlew assembleRelease --no-build-cache --no-configuration-cache
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
