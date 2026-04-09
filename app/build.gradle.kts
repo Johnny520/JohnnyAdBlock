@@ -32,13 +32,8 @@ android {
 }
 
 dependencies {
-    // 统一依赖版本，彻底解决冲突
-    implementation("androidx.appcompat:appcompat:1.6.1") {
-        exclude(group = "androidx.core", module = "core-ktx")
-    }
-    implementation("com.google.android.material:material:1.11.0") {
-        exclude(group = "androidx.core", module = "core-ktx")
-    }
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
