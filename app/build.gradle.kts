@@ -32,6 +32,8 @@ android {
     }
     kotlinOptions {
         jvmTarget = "17"
+        // 补充：禁用编译器统计
+        freeCompilerArgs += "-Xno-optimized-jvm-ir"
     }
     buildFeatures {
         viewBinding = true
