@@ -147,7 +147,7 @@ cd JohnnyAdBlock
 
 
 
-## 📝 更新日志
+📝 更新日志
  
 v1.0.0 (2026-04-09)
  
@@ -161,9 +161,9 @@ v1.0.0 (2026-04-09)
 ​
 - 完成项目基础文档与开源配置
  
- ---
+ 
  
-## 🤝 贡献指南
+🤝 贡献指南
  
 欢迎提交 Issue 反馈问题、提交 PR 优化功能！
  
@@ -177,22 +177,18 @@ v1.0.0 (2026-04-09)
 ​
 5. 打开 Pull Request
  
- ---
-
-
-## 📄 开源协议
+ 
+ 
+📄 开源协议
  
 本项目基于 MIT License 开源，详细协议见  LICENSE  文件。
  
  
----
  
-## 👨‍💻 作者
+👨‍💻 作者
  
 Johnny520
  
 - GitHub：https://github.com/Johnny520
 ​
 - 项目地址：https://github.com/Johnny520/JohnnyAdBlock
-
----
