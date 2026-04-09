@@ -1,9 +1,4 @@
-📦 JohnnyAdBlock 全Java项目 README.md（一键复制版）
- 
-直接全选复制，粘贴到仓库根目录的  README.md  里，覆盖旧内容即可。
- 
-markdown  
-# JohnnyAdBlock 🚫
+  # JohnnyAdBlock 🚫
 一款轻量、纯净的Android广告拦截工具，纯Java开发，无Kotlin依赖，开箱即用。
 
 ---
