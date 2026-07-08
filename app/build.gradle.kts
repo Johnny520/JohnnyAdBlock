@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.johnnyadblock"
+    namespace = "com.qgg.johnny"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.johnnyadblock"
+        applicationId = "com.qgg.johnny"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
