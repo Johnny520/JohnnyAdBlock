@@ -107,6 +107,39 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- 拦截统计卡片 -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="1dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拦截统计"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content" android:text="累计拦截" android:textColor="?android:attr/textColorSecondary"/>
+                    <TextView android:id="@+id/total_blocked" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content" android:text="今日拦截" android:textColor="?android:attr/textColorSecondary"/>
+                    <TextView android:id="@+id/today_blocked" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
         <!-- 系统信息卡片 -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
