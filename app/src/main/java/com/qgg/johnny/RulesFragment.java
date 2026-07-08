@@ -1,4 +1,5 @@
 package com.qgg.johnny;
+import androidx.appcompat.widget.SwitchCompat;
 
 import android.app.AlertDialog;
 import android.content.Context;
