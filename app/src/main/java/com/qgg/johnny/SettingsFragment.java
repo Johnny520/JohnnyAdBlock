@@ -1,4 +1,4 @@
-package com.qgg.Johnny;
+package com.qgg.johnny;
 
 import android.content.Context;
 import android.content.SharedPreferences;
