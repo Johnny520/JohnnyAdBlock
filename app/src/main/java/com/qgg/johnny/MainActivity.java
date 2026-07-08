@@ -1,4 +1,4 @@
-package com.qgg.Johnny;
+package com.qgg.johnny;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
