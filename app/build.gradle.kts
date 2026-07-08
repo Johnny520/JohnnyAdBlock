@@ -22,7 +22,7 @@ android {
                 "proguard-rules.pro"
             )
             // 使用 AGP 内置 debug keystore 签名 release，确保 CI 能产出可安装 APK
-            signingConfig = signingConfigs.debug
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
 
