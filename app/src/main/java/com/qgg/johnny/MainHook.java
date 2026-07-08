@@ -1,4 +1,4 @@
-package com.qgg.Johnny;
+package com.qgg.johnny;
 
 import de.robv.android.xposed.*;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.view.WindowManager;
 
 public class MainHook implements IXposedHookLoadPackage {
+    public static boolean isGlobalEnabled = true;
+
     
     @Override
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable {
