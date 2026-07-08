@@ -131,7 +131,7 @@ public class RulesFragment extends Fragment {
         
         class ViewHolder extends RecyclerView.ViewHolder {
             TextView tvAppName, tvPackageName, tvVersion, tvTips, tvCompatible;
-            android.widget.SwitchCompat switchEnabled;
+            androidx.appcompat.widget.SwitchCompat switchEnabled;
             ViewHolder(View itemView) {
                 super(itemView);
                 tvAppName = itemView.findViewById(R.id.tv_app_name);
