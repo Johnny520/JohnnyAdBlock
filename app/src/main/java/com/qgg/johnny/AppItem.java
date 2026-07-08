@@ -1,4 +1,4 @@
-package com.qgg.Johnny;
+package com.qgg.johnny;
 
 public class AppItem {
     public String packageName;
