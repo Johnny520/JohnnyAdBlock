@@ -12,4 +12,5 @@
     <color name="colorSecondary">#FF03DAC5</color>
     <color name="colorSecondaryVariant">#FF018786</color>
     <color name="colorOnSecondary">#FF000000</color>
+    <color name="success_green">#4CAF50</color>
 </resources>
