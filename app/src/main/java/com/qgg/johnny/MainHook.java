@@ -213,6 +213,7 @@ public class MainHook implements IXposedHookLoadPackage {
         public String methodName;
         public String returnType;
         public String description;
+        public boolean enabled = true;
         public UserRule(String packageName, String className, String methodName, String returnType, String description) {
             this.packageName = packageName;
             this.className = className;
