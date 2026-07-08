@@ -206,4 +206,19 @@ public class MainHook implements IXposedHookLoadPackage {
             });
         } catch (Throwable e) {}
     }
+
+    public static class UserRule {
+        public String packageName;
+        public String className;
+        public String methodName;
+        public String returnType;
+        public String description;
+        public UserRule(String packageName, String className, String methodName, String returnType, String description) {
+            this.packageName = packageName;
+            this.className = className;
+            this.methodName = methodName;
+            this.returnType = returnType;
+            this.description = description;
+        }
+    }
 }
