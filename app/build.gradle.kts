@@ -20,7 +20,7 @@ android {
             if (storeBase64 != null && storeBase64.isNotBlank()) {
                 val keystoreFile = File.createTempFile("release-key", ".jks")
                 keystoreFile.deleteOnExit()
-                keystoreFile.writeBytes(android.util.Base64.decode(storeBase64, android.util.Base64.DEFAULT))
+                keystoreFile.writeBytes(java.util.Base64.getDecoder().decode(storeBase64))
                 storeFile = keystoreFile
                 storePassword = System.getenv("KEY_STORE_PASSWORD")
                 keyAlias = System.getenv("KEY_ALIAS")
