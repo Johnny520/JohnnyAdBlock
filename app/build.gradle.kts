@@ -10,8 +10,23 @@ android {
         applicationId = "com.qgg.johnny"
         minSdk = 29
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1.0"
+    }
+
+    signingConfigs {
+        create("releaseSign") {
+            val storeBase64 = System.getenv("SIGNING_KEY")
+            if (storeBase64 != null && storeBase64.isNotBlank()) {
+                val keystoreFile = File.createTempFile("release-key", ".jks")
+                keystoreFile.deleteOnExit()
+                keystoreFile.writeBytes(android.util.Base64.decode(storeBase64, android.util.Base64.DEFAULT))
+                storeFile = keystoreFile
+                storePassword = System.getenv("KEY_STORE_PASSWORD")
+                keyAlias = System.getenv("KEY_ALIAS")
+                keyPassword = System.getenv("KEY_PASSWORD")
+            }
+        }
     }
 
     buildTypes {
@@ -21,8 +36,9 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // 使用 AGP 内置 debug keystore 签名 release，确保 CI 能产出可安装 APK
-            signingConfig = signingConfigs.getByName("debug")
+            // 优先使用 CI 注入的正式签名密钥（Secrets）；本地无密钥时回退到 debug 以便调试
+            val hasSigning = !System.getenv("SIGNING_KEY").isNullOrBlank()
+            signingConfig = if (hasSigning) signingConfigs.getByName("releaseSign") else signingConfigs.getByName("debug")
         }
     }
 
